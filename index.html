@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Segurança Digital para Idosos</title>
+    <style>
+        /* Cores principais com alto contraste */
+        :root {
+            --cor-fundo: #F4F6F9;
+            --cor-card: #FFFFFF;
+            --cor-texto: #1A1A1A;
+            --cor-primaria: #0056B3;
+            --cor-alerta: #D32F2F;
+            --cor-sucesso: #388E3C;
+        }
+
+        /* Configurações gerais focadas em acessibilidade */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            font-size: 22px; /* Letras grandes para facilitar a leitura */
+        }
+
+        /* Topo do aplicativo */
+        header {
+            background-color: var(--cor-primaria);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 24px;
+        }
+
+        /* Container principal */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Seções de dicas (Cards) */
+        .card {
+            background-color: var(--cor-card);
+            border: 3px solid #CCCCCC;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 28px;
+            color: var(--cor-primaria);
+            border-bottom: 2px solid #E0E0E0;
+            padding-bottom: 10px;
+        }
+
+        /* Lista de orientações */
+        .dicas-lista {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dicas-lista li {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        /* Marcadores numéricos grandes e legíveis */
+        .dicas-lista li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--cor-sucesso);
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        /* Alertas visuais de perigo */
+        .alerta {
+            background-color: #FFEBEE;
+            border-left: 8px solid var(--cor-alerta);
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+
+        .alerta strong {
+            color: var(--cor-alerta);
+        }
+
+        /* Botões grandes e fáceis de tocar */
+        .botao-ajuda {
+            display: block;
+            width: 100%;
+            background-color: var(--cor-alerta);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 6px 0px #9A0007;
+            transition: background-color 0.2s;
+        }
+
+        .botao-ajuda:active {
+            margin-top: 34px;
+            box-shadow: 0 2px 0px #9A0007;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+            color: #666666;
+            background-color: #E9ECEF;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guia Prático de Segurança</h1>
+        <p>Aprenda a se proteger na internet de forma simples</p>
+    </header>
+
+    <main>
+
+        <!-- CARD 1: SENHAS -->
+        <section class="card">
+            <h2>🔑 1. Criando Senhas Seguras</h2>
+            <ul class="dicas-lista">
+                <li>Não use datas de nascimento ou nomes de parentes.</li>
+                <li>Misture letras maiúsculas, minúsculas e números.</li>
+                <li>Anote suas senhas em um caderno físico guardado em casa, em vez de salvar no celular.</li>
+            </ul>
+        </section>
+
+        <!-- CARD 2: MENSAGENS E LINKS -->
+        <section class="card">
+            <h2>⚠️ 2. Cuidado com Links e Mensagens</h2>
+            <ul class="dicas-lista">
+                <li>Bancos nunca pedem senhas por mensagem de texto ou WhatsApp.</li>
+                <li>Se receber uma foto de parente pedindo dinheiro com número novo, ligue para o número antigo antes de pagar.</li>
+                <li>Evite clicar em links que prometem prêmios ou dinheiro fácil.</li>
+            </ul>
+            <div class="alerta">
+                <strong>🚨 Na dúvida:</strong> Não clique e peça ajuda para alguém de sua total confiança.
+            </div>
+        </section>
+
+        <!-- CARD 3: LIGAÇÕES -->
+        <section class="card">
+            <h2>📞 3. Ligações de Falsos Bancos</h2>
+            <ul class="dicas-lista">
+                <li>Se ligarem dizendo que sua conta foi invadida, desligue imediatamente.</li>
+                <li>Não passe nenhum código que chegar no seu celular para quem está na ligação.</li>
+                <li>Vá até a sua agência bancária ou ligue para o número que está atrás do seu cartão físico.</li>
+            </ul>
+        </section>
+
+        <!-- BOTÃO DE EMERGÊNCIA -->
+        <a href="tel:190" class="botao-ajuda">🚨 LIGAR PARA A POLÍCIA (190)</a>
+
+    </main>
+
+    <footer>
+        <p>Este aplicativo foi feito para ajudar você a navegar com segurança.</p>
+        <p>Mantenha a tela com brilho confortável para seus olhos.</p>
+    </footer>
+
+</body>
+</html>
